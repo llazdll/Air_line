@@ -87,7 +87,7 @@ jps  # Should show NameNode, DataNode, ResourceManager, NodeManager
 ### 2. Configure Environment
 
 ```bash
-cd /path/to/amiri
+cd /path/to/big_data_project
 source config/hadoop_env.sh
 ```
 
@@ -149,7 +149,7 @@ Rscript tests/validate_results.R
 ## Project Structure
 
 ```
-amiri/
+big_data_project/
 ├── airline_stats.csv              # Dataset (~33K flights, 4 columns)
 ├── README.md                      # This file
 ├── run_all.R                      # Master orchestration script
