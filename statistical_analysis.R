@@ -27,7 +27,7 @@ library(dunn.test)
 library(car)
 
 # ----- 2. Load Dataset -----
-df <- read.csv("/Users/mohammadhosein/Desktop/amiri/airline_stats.csv", stringsAsFactors = FALSE)
+df <- read.csv("/Users/mohammadhosein/Desktop/big_data/airline_stats.csv", stringsAsFactors = FALSE)
 
 cat("========== Dataset Overview ==========\n")
 str(df)
