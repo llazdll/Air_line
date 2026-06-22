@@ -329,7 +329,7 @@ p_km <- fviz_cluster(km_airline, data = airline_scaled,
                       palette = "jco", ggtheme = theme_minimal(),
                       main = "K-Means Clustering — Airline Delay Profiles") +
   geom_text(data = km_coords,
-            aes(x = pct_carrier_delay, y = pct_atc_delay, label = Airline),
+            aes(x = avg_carrier, y = avg_atc, label = Airline),
             vjust = -0.8, size = 3.5, color = "black", fontface = "bold")
 print(p_km)
 ggsave("kmeans_airlines.png", p_km, width = 8, height = 6)
@@ -621,3 +621,8 @@ cat("  12. regression_plot.png         — Regression scatterplot\n")
 cat("  13. logistic_regression_plot.png— Logistic probability curve\n")
 cat("  14. roc_curve.png               — ROC curve with AUC\n")
 cat("================================================\n")
+
+
+
+
+
